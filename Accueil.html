@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Accueil.html">
+                <img src="../photos/logo/MuseBlanc.png" alt="">
+            </a>
+        </div>
+        <div class="pages">
+            <div class="lien">
+                <a href="./tournée.html">Tournée</a>
+            </div>
+            <div class="lien">
+                <a href="./album.html">Album</a>
+            </div>
+        </div>
+    </header>
+    <div class="video">
+        <video src="../photos/MUSE - Simulation Theory Film [Official Trailer].mp4" autoplay loop muted></video>
+    </div> 
+    <div class="htd">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolore sit, natus odio minus harum ex sint in neque quisquam numquam similique tempore eveniet, inventore enim, nesciunt ipsa optio. Natus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem nulla assumenda atque voluptatum repellat et quo dolorum, veniam fugit ipsa maiores odio deserunt voluptates ducimus incidunt possimus exercitationem sed?</p>
+    </div>
+    <div class="groupe">
+        <img src="../photos/photoGroupe.jpg" alt="">
+    </div>
+    <footer>
+        <div class="liens">
+            <div class="contact">
+                <a href="./wip.html">Contact</a> 
+            </div>
+            <div class="cookie">
+                <a href="./wip.html">Cookie</a>
+            </div>
+            <div class="informations">
+                <a href="./wip.html">Mes informations</a>
+            </div>
+            <div class="plan-site">
+                <a href="./wip.html">Plan du site</a>
+            </div>
+            <div class="rgpd">
+                <a href="./wip.html">RGPD</a>
+            </div>
+            <div class="paiement">
+                <a href="./wip.html">Paiement</a>
+            </div>
+        </div>
+        <div class="reseaux">
+            <div class="texte">
+                <h4>Ecoutez nous sur vos plateformes préférées</h4>
+            </div>
+            <div class="logos">
+                <div class="deezer">
+                    <a href="https://www.deezer.com/fr/artist/705" target="_blank">
+                        <img src="../photos/logo/negatifs/deezer.png" alt="">
+                    </a>
+                </div>
+                <div class="spotify">
+                    <a href="https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI" target="_blank">
+                        <img src="../photos/logo/negatifs/spotify.png" alt="">
+                    </a>
+                </div>
+                <div class="sound-cloud">
+                    <a href="https://soundcloud.com/muse" target="_blank">
+                        <img src="../photos/logo/negatifs/soundcloud.png" alt="">
+                    </a>
+                </div>
+                <div class="youtube">
+                    <a href="https://www.youtube.com/user/muse" target="_blank">
+                        <img src="../photos/logo/negatifs/youtube.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var height = window.innerHeight;
+        var header = document.querySelector("header");
+        var previousScroll = height;
+
+        function scroll() {
+            if (previousScroll > window.scrollY) {
+                header.classList.remove('hidden');
+            } else if (window.scrollY > 150) {
+                header.classList.add('hidden');
+            }
+            previousScroll = window.scrollY;
+        }
+        
+        window.onscroll = document.ontouchmove = scroll; 
+    </script>
+</body>
+</html>
