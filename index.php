@@ -1,5 +1,5 @@
 <?php
-require("header.html");
+require("include/header.html");
 $html = <<<HTML
 <main>
     <h1>Test</h1>
@@ -10,5 +10,4 @@ $html = <<<HTML
 HTML;
 
 echo($html);
-require("footer.html");
-require("script.js");
+require("include/footer.html");
