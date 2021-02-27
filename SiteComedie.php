@@ -11,7 +11,7 @@ $html = <<<HTML
 					<img src="tribunal4.png">
 				</div>
 				<div id="texte-tribunal">
-					<h3>Le Tribunal d'instance devient chambre de proximité</h3>
+					<h4>Le Tribunal d'instance devient chambre de proximité</h4>
 					<p>Le tribunal de proximité peut être compétent pour les affaires civiles lorsque le montant des demandes est inférieur ou égal à 10 000 €. Pour déterminer la valeur du litige, il faut prendre en compte le montant total des demandes.
 
 Le tribunal de proximité peut se voir confier par décision des chefs de la cour d'appel certains litiges habituellement confiés au tribunal judiciaire.</p>

@@ -11,7 +11,7 @@ $html = <<<HTML
 					<img src="tribunal2.png">
 				</div>
 				<div id="texte-tribunal">
-					<h3>Pôle civil</h3>
+					<h4>Pôle civil</h4>
 					<p>Le pôle civil géré par le Juge de l'exécution et le Juge des contentieux de la protection hors de chambre de proximité, regrroupe les situations tel que la protection des majeurs, le bail d'habitation, le crédit à la consommation et le surendettement.</p>
 				</div>
 			</article>
