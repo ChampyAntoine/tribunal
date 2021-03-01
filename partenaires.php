@@ -4,34 +4,20 @@ $html = <<<HTML
 
 <main>
 	<div id="partenaires">
-	<div id="titre-partenaires">
-		<h2>Les avocats</h2>
-	</div>
+		<article class="avocat">
+			<h2>Les avocats</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<p>
+		</article>
 		
-			<article class="avocat">
-				
-				<div id="texte-partenaires">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<p>
-				</div>
-			</article>
-			<div id="titre-partenaires">
-		<h2>Les Notaires</h2>
-	</div>
-			<article class="notaire">
-				<div id="texte-partenaires">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div>
-			</article>
-			<div id="titre-partenaires">
-		<h2>Les huissiers</h2>
-	</div>
-			<article class="huissier">
-				<div id="texte-partenaires">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div>
-			</article>
-			
-	
+		<article class="notaire">
+			<h2>Les Notaires</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		</article>
+
+		<article class="huissier">
+			<h2>Les huissiers</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		</article>
 	</div>
 <main>
 HTML;
