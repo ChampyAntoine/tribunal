@@ -3,41 +3,41 @@ require("include/header.html");
 $html = <<<HTML
 
 <main>
-	<div id="tribunaux">
+	<div class="div">
 		<h2>Les tribunaux</h2>
-		<section class="section-tribunaux">
-			<article class="tribunal">
-				<div class="img-tribunal">
+		<section class="section">
+			<article class="art">
+				<div class="img-art">
 					<img src="tribunal1.png">
 				</div>
-				<div id="texte-tribunal">
+				<div class="texte-art">
 					<h3>Tribunal 1</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
 			</article>
-			<article class="tribunal">
-				<div class="img-tribunal">
+			<article class="art">
+				<div class="img-art">
 					<img src="tribunal2.png">
 				</div>
-				<div id="texte-tribunal">
+				<div class="texte-art">
 					<h3>Tribunal 2</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
 			</article>
-			<article class="tribunal">
-				<div class="img-tribunal">
+			<article class="art">
+				<div class="img-art">
 					<img src="tribunal3.png">
 				</div>
-				<div id="texte-tribunal">
+				<div class="texte-art">
 					<h3>Tribunal 3</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
 			</article>
-			<article class="tribunal">
-				<div class="img-tribunal">
+			<article class="art">
+				<div class="img-art">
 					<img src="tribunal4.png">
 				</div>
-				<div id="texte-tribunal">
+				<div class="texte-art">
 					<h3>Tribunal 4</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				</div>
@@ -45,26 +45,28 @@ $html = <<<HTML
 		</section>
 	</div>
 
-	<div id="actualites">
+	<div class="div">
 		<h2>Nos actualités</h2>
-		<section class="section-actualites">
-			<article class="daily-actu">
-				<div id="img-actualite">
+		<section class="section">
+			<article class="art">
+				<div class="img-art">
 					<img src="imageactualite.png" alt="">
 				</div>
-				<div id="titre-actualite">
-					<h2>Titre Actu</h2>
-				</div>
-				<div class="description-actualite">
+				<div class="texte-art">
+					<h3>Titre Actu</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+			</article>
+			<article class="art">
+				<div class="texte-art">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus nunc at eros tincidunt congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vel volutpat ex, quis vehicula felis. Donec sit amet leo viverra, vestibulum lectus ac, tempus libero. </p>
 				</div>
 			</article>
 		</section>
 	</div>
 
-	<div id="droits">
-		
-		<h2> Vos droits </h2>
+	<div class="div droits">
+		<h2>Vos droits</h2>
 		<ul>
 			<li>
 				<a href="">lien1</a>
@@ -77,7 +79,7 @@ $html = <<<HTML
 			</li>
 		</ul>
 	</div>
-<main>
+</main>
 HTML;
 
 echo($html);

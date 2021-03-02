@@ -1,14 +1,10 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-a{
+a, a:visited {
     color: #000;
     text-decoration: none;
-}
-
-a:visited {
-    color: #000;
 }
