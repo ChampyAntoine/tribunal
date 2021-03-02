@@ -52,8 +52,10 @@ header li:hover {
 header .carousel {
     display: flex;
     width: 100%;
+	background-color:bisque;
 }
 
 header #img-carousel {
     height: 350px;
+	width:100%;
 }
