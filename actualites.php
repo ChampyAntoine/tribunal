@@ -25,6 +25,7 @@ et doté d’une chambre de proximité à Sedan</li>
 							<li>le site du « 12 rue Madame de Sévigné », propriété du département, et local de l’ancien TI</li>
 							<li>le site du « 20 rue de l’Arquebuse », propriété de la commune, et local du conseil de prud’hommes.</li>
 						</ul>
+						<p> Le Palais de Justice est le chef des autres tribunaux </p>
 					<h4> 1 site sur Sedan:</h4>
 					<ul>
 						<li>le site du « 1 rue de la Comédie », propriété de la commune, et local de la
