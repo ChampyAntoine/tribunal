@@ -1,5 +1,6 @@
 <?php
-require("include/header.html");
+$title = "Site de Comédie";
+require("include/header.php");
 $html = <<<HTML
 
 <main>

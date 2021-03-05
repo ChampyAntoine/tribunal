@@ -1,47 +1,56 @@
 <?php
-require("include/header.html");
+$title = "Accueil";
+require("include/header.php");
 $html = <<<HTML
 
 <main>
-	<div class="div">
+	<div id="tribunaux" class="div">
 		<h2>Les tribunaux</h2>
 		<section class="section">
-			<article class="art">
-				<div class="img-art">
-					<img src="tribunal1.png">
-				</div>
-				<div class="texte-art">
-					<h3>Tribunal 1</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div>
-			</article>
-			<article class="art">
-				<div class="img-art">
-					<img src="tribunal2.png">
-				</div>
-				<div class="texte-art">
-					<h3>Tribunal 2</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div>
-			</article>
-			<article class="art">
-				<div class="img-art">
-					<img src="tribunal3.png">
-				</div>
-				<div class="texte-art">
-					<h3>Tribunal 3</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div>
-			</article>
-			<article class="art">
-				<div class="img-art">
-					<img src="tribunal4.png">
-				</div>
-				<div class="texte-art">
-					<h3>Tribunal 4</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div>
-			</article> 
+			<a href="palaisJustice.php">
+				<article class="art">
+					<div class="img-art">
+						<img src="tribunal1.png">
+					</div>
+					<div class="texte-art">
+						<h3>Tribunal 1</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</article>
+			</a>
+			<a href="SiteArquebuse.php">
+				<article class="art">
+					<div class="img-art">
+						<img src="tribunal2.png">
+					</div>
+					<div class="texte-art">
+						<h3>Tribunal 2</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</article>
+			</a>
+			<a href="SiteComedie.php">
+				<article class="art">
+					<div class="img-art">
+						<img src="tribunal3.png">
+					</div>
+					<div class="texte-art">
+						<h3>Tribunal 3</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</article>
+			</a>
+			<a href="siteSevigne.php">
+				<article class="art">
+					<div class="img-art">
+						<img src="tribunal4.png">
+					</div>
+					<div class="texte-art">
+						<h3>Tribunal 4</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</article> 
+			</a>
 		</section>
 	</div>
 
