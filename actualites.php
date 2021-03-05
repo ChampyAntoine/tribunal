@@ -4,7 +4,7 @@ $html = <<<HTML
 
 <main>
 	<div class="div">
-		<h2>Nos actualités/h2>
+		<h2>Nos actualités</h2>
 		<section class="section">
 			<article class="art">
 				<div class="img-art">
@@ -33,8 +33,6 @@ chambre de proximité (ancien TI) comme du tribunal de commerce.</li>
 					</ul> /*mettre la liste sous forme de puces *\
 				</div>
 			</article>
-			
-	
 </main>
 HTML;
 
