@@ -13,8 +13,8 @@ $html = <<<HTML
 						<img src="tribunal1.png">
 					</div>
 					<div class="texte-art">
-						<h3>Tribunal 1</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<h3>Le Palais De Justice</h3>
+						<p>Site à Charleville-Mézières</p>
 					</div>
 				</article>
 			</a>
@@ -24,8 +24,8 @@ $html = <<<HTML
 						<img src="tribunal2.png">
 					</div>
 					<div class="texte-art">
-						<h3>Tribunal 2</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<h3>Tribunal Judiciaire</h3>
+						<p>Site de Sévigné</p>
 					</div>
 				</article>
 			</a>
@@ -35,8 +35,8 @@ $html = <<<HTML
 						<img src="tribunal3.png">
 					</div>
 					<div class="texte-art">
-						<h3>Tribunal 3</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<h3>Tribunal Judiciaire auprès des Conseil de Prud'Hommes</h3>
+						<p>Site de l'Arquebuse</p>
 					</div>
 				</article>
 			</a>
@@ -46,8 +46,8 @@ $html = <<<HTML
 						<img src="tribunal4.png">
 					</div>
 					<div class="texte-art">
-						<h3>Tribunal 4</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+						<h3>Tribunal de proximité/tribunal de Commerces</h3>
+						<p>Site de Comédie situé à Sedan.</p>
 					</div>
 				</article> 
 			</a>
@@ -62,13 +62,12 @@ $html = <<<HTML
 					<img src="imageactualite.png" alt="">
 				</div>
 				<div class="texte-art">
-					<h3>Titre Actu</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<h3>Une nouvelle organisation</h3>
 				</div>
 			</article>
 			<article class="art">
 				<div class="texte-art">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus nunc at eros tincidunt congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vel volutpat ex, quis vehicula felis. Donec sit amet leo viverra, vestibulum lectus ac, tempus libero. </p>
+					<p>Depuis le 1er janvier 2020, les 5 juridictions ont été ramenées à 3 afin de rendre la justice plus accessible et plus lisible. </p>
 				</div>
 			</article>
 		</section>
@@ -76,15 +75,16 @@ $html = <<<HTML
 
 	<div class="div droits">
 		<h2>Vos droits</h2>
+		<p> Veuillez trouver sur ces sites de justices, les dispositifs qui sont à disposition des citoyens et des justiciables.
 		<ul>
 			<li>
-				<a href="">lien1</a>
+				<a href="http://www.justice.fr">http://www.justice.fr</a>
 			</li>
 			<li>
-				<a href="">lien2</a>
+				<a href="http://www.justice.gouv.fr">http://www.justice.gouv.fr</a>
 			</li>
 			<li>
-				<a href="">lien3</a>
+				<a href="http://www.service-public.fr">http://www.service-public.fr</a>
 			</li>
 		</ul>
 	</div>
