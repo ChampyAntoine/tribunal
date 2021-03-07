@@ -32,6 +32,6 @@
                 </ul>
             </nav>
             <div class="carousel">
-                <img id="img-carousel" src="DSC_0090.jpg" alt="" >
+                <img id="img-carousel" src="./src/image/carrousel.JPG" alt="" >
             </div>
         </header>
