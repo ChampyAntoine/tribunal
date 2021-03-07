@@ -60,6 +60,7 @@ header .carousel {
 }
 
 header #img-carousel {
-    height: 350px;
+   
     width: 100%;
+	height: auto;
 }
