@@ -10,7 +10,7 @@ $html = <<<HTML
 			<a href="palaisJustice.php">
 				<article class="art">
 					<div class="img-art">
-						<img src="tribunal1.png">
+						<img src="./src/image/DSC_0030.JPG">
 					</div>
 					<div class="texte-art">
 						<h3>Le Palais De Justice</h3>
@@ -21,7 +21,7 @@ $html = <<<HTML
 			<a href="SiteArquebuse.php">
 				<article class="art">
 					<div class="img-art">
-						<img src="tribunal2.png">
+						<img src="./src/image/DSC_0034.JPG">
 					</div>
 					<div class="texte-art">
 						<h3>Tribunal Judiciaire</h3>
@@ -32,7 +32,7 @@ $html = <<<HTML
 			<a href="SiteComedie.php">
 				<article class="art">
 					<div class="img-art">
-						<img src="tribunal3.png">
+						<img src="./src/image/DSC_0041.JPG">
 					</div>
 					<div class="texte-art">
 						<h3>Tribunal Judiciaire auprès des Conseil de Prud'Hommes</h3>
@@ -43,7 +43,7 @@ $html = <<<HTML
 			<a href="siteSevigne.php">
 				<article class="art">
 					<div class="img-art">
-						<img src="tribunal4.png">
+						<img src="./src/image/DSC_0078.JPG">
 					</div>
 					<div class="texte-art">
 						<h3>Tribunal de proximité/tribunal de Commerces</h3>
@@ -77,15 +77,15 @@ $html = <<<HTML
 		<h2>Vos droits</h2>
 		<p> Veuillez trouver sur ces sites de justices, les dispositifs qui sont à disposition des citoyens et des justiciables.
 		<ul>
-			<li>
-				<a href="http://www.justice.fr">http://www.justice.fr</a>
-			</li>
-			<li>
-				<a href="http://www.justice.gouv.fr">http://www.justice.gouv.fr</a>
-			</li>
-			<li>
-				<a href="http://www.service-public.fr">http://www.service-public.fr</a>
-			</li>
+			<a href="https://www.justice.fr">
+				<li>justice.fr</li>
+			</a>
+			<a href="https://www.justice.gouv.fr">
+				<li>justice.gouv.fr</li>
+			</a>
+			<a href="https://www.service-public.fr">
+				<li>service-public.fr</li>
+			</a>
 		</ul>
 	</div>
 </main>
