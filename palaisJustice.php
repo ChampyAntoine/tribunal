@@ -4,14 +4,16 @@ require("include/header.php");
 $html = <<<HTML
 
 <main>
-	<div id="tribunaux">
+	<div id="tribunaux" class="div">
 		<h2>Palais de Justice (Site Esplanade)</h2>
-		<section class="section-tribunaux">
-			<article class="tribunal">
-				<div class="img-tribunal">
-					<img src="tribunal1.png">
+		<section class="section">
+			<article class="art">
+				<div class="img-art">
+					<img src="./src/image/DSC_0030.JPG">
 				</div>
-				<div id="texte-tribunal">
+				</section>
+				<section class="section">
+				<div class="texte-tri">
 					<h3>Aile Nord</h3>
 					<h4>Pôle famille</h4>
 					<p>Le palais de justice occupe le pôle famille avec le Juge des affaires
@@ -25,18 +27,21 @@ $html = <<<HTML
 					<p>Enfin, vous trouverez le Juge de l'applicatoin des peines au Rez de chaussée qui opère un suivi des condamnés à l'intérieur et à l'extérieur de la prison.</p>
 				</div>
 			</article>
-			<article class="tribunal">
-				
-				<div id="coordonnees-tribunal">
+			</section>
+			<section class="section">
+			<article class="art">
+			<div class="texte-tri">
 					<h3>Contact</h3>
 					<p>9 Espl. du Palais de Justice, 08000 Charleville-Mézières, France.</p>
 					<p>+33324576900</p>
 				</div>
-				<div class="img-tribunal">
-					<img src="tribunal1.png">
+				<div class="img-art">
+					<img src="./src/image/carte-palais_de_justice.png">
 				</div>
+
 			</article>
-			
+			</section>
+			</div>
 <main>
 HTML;
 
