@@ -4,14 +4,16 @@ require("include/header.php");
 $html = <<<HTML
 
 <main>
-	<div id="tribunaux">
+	<div id="tribunaux" class="div">
 		<h2>Site de l'Arquebuse (aux côtés du CPH)</h2>
-		<section class="section-tribunaux">
-			<article class="tribunal">
-				<div class="img-tribunal">
+		<section class="section">
+			<article class="art">
+				<div class="img-art">
 					<img src="tribunal3.png">
 				</div>
-				<div id="texte-tribunal">
+				</section>
+				<section class="section">
+				<div class="texte-tri">
 					<h4>Pôle économique et social</h4>
 					<p>Le site de l'Arquebuse prosose 3 services:<p>
 					<p>Le tribunale de commerce règle les litiges entre particuliers et commerçants ou entre commercants et sociétés commerciales. Les conflits qui porte sur le commerce entre les entreprises, mais aussi entre les personnes.</p>
@@ -19,18 +21,20 @@ $html = <<<HTML
 					<p>La proccédure cillective place sous contrôle judiciaire le fonctionnement d'une entreprise en difficulté.</p>
 				</div>
 			</article>
-			<article class="tribunal">
+			</section>
+			<section class="section">
+			<article class="art">
 				
-				<div id="coordonnees-tribunal">
+				<div class="texte-tri">
 					<h3>Contact</h3>
 					<p>20 Rue de l'Arquebuse, 08000 Charleville-Mézières, France</p>
 					<p>+33324598888</p>
 				</div>
-				<div class="img-tribunal">
+				<div class="img-art">
 					<img src="tribunal2.png">
 				</div>
 			</article>
-			
+	</div>		
 <main>
 HTML;
 
