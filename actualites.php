@@ -9,10 +9,14 @@ $html = <<<HTML
 		<section class="section">
 			<article class="art">
 				<div class="img-art">
-					<img src="actualite.png">
+					<img src="./src/image/nouvelle-organisation.png"">
 				</div>
 				<div class="texte-art">
 					<h3>Une nouvelle organisation</h3>
+				</div>
+				</article>
+				<article class="art">
+				<div class="texte-art">
 					<h4>Depuis le 1er janvier 2020, les 5 juridictions ont été ramenées à 3:</h4>
 						<ul> 
 							<li>le tribunal judiciaire ayant son siège à Charleville-Mézières,
@@ -31,9 +35,13 @@ et doté d’une chambre de proximité à Sedan</li>
 					<ul>
 						<li>le site du « 1 rue de la Comédie », propriété de la commune, et local de la
 chambre de proximité (ancien TI) comme du tribunal de commerce.</li>
-					</ul> /*mettre la liste sous forme de puces *\
+					</ul>
+			
 				</div>
 			</article>
+			</section>
+			</div>
+		
 </main>
 HTML;
 
