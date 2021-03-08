@@ -18,7 +18,7 @@ $html = <<<HTML
 					</div>
 				</article>
 			</a>
-			<a href="SiteArquebuse.php">
+			<a href="siteSevigne.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/DSC_0034.JPG">
@@ -29,7 +29,7 @@ $html = <<<HTML
 					</div>
 				</article>
 			</a>
-			<a href="SiteComedie.php">
+			<a href="SiteArquebuse.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/DSC_0041.JPG">
@@ -40,7 +40,7 @@ $html = <<<HTML
 					</div>
 				</article>
 			</a>
-			<a href="siteSevigne.php">
+			<a href="SiteComedie.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/DSC_0078.JPG">
