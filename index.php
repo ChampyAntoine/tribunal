@@ -59,7 +59,7 @@ $html = <<<HTML
 		<section class="section">
 			<article class="art">
 				<div class="img-art">
-					<img src="imageactualite.png" alt="">
+					<img src="./src/image/nouvelle-organisation.png" alt="">
 				</div>
 				<div class="texte-art">
 					<h3>Une nouvelle organisation</h3>
@@ -68,6 +68,9 @@ $html = <<<HTML
 			<article class="art">
 				<div class="texte-art">
 					<p>Depuis le 1er janvier 2020, les 5 juridictions ont été ramenées à 3 afin de rendre la justice plus accessible et plus lisible. </p>
+					<input class="button"
+       type="button"
+       value="En savoir plus">
 				</div>
 			</article>
 		</section>
@@ -75,6 +78,7 @@ $html = <<<HTML
 
 	<div class="div droits">
 		<h2>Vos droits</h2>
+		<section class="section">
 		<p> Veuillez trouver sur ces sites de justices, les dispositifs qui sont à disposition des citoyens et des justiciables.
 		<ul>
 			<a href="https://www.justice.fr">
@@ -87,6 +91,7 @@ $html = <<<HTML
 				<li>service-public.fr</li>
 			</a>
 		</ul>
+		</section>
 	</div>
 </main>
 HTML;
