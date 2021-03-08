@@ -3,16 +3,30 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Page de connexion</title>
-		<link rel="stylesheet" href="./css/style.css">
-		<script src=""></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="./css/style-bdd.css">
 	</head>
 	<body>
-		<h1>Page de connexion</h1>
-		<form method="post">
-			Email : <input type="email" name="email"><br>
-			Mot de passe : <input type="password" name="mdp"><br>
-			<input type="submit" name="connexion" value="Connexion"><br>
-		</form>
+		<div id="container">
+			<h1>Page de connexion</h1>
+			<form method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="">Email</label>
+					<input type="email" name="email" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="">Mot de passe</label>
+					<input type="password" name="mdp" class="form-control">
+				</div>
+
+				<input class="submit" type="submit" name="connexion" value="Connexion">
+			</form>
+			<a href="./index.php">Accueil</a>
+		</div>
 		<?php
 			if(isset($_REQUEST['connexion']))
 			{
@@ -50,6 +64,5 @@
 				mysqli_close($lien);
 			}
 		?>
-		<a href="./index.php">Accueil</a>
 	</body>
 </html>		

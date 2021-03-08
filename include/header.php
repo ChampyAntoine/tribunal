@@ -17,9 +17,17 @@ $html = <<<HTML
         <header>
 HTML;
 
+session_start();
+if(!isset($_SESSION['idm']) or !isset($_SESSION['nom']) or !isset($_SESSION['prenom']) or !isset($_SESSION['email']))
+{
+    $connecte=false;
+}
+else
+{
+    $connecte=true;
+}
 
-$flag = false;
-if($flag == true) {
+if($connecte == true) {
     $html.= <<<HTML
                 <div class="nav-adm">
                 <ul class="ul-adm">

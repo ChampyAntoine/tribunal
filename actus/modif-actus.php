@@ -5,6 +5,7 @@
 		header("Location: ../index.php");
 	}
 ?>
+
 <!doctype html>
 <html lang="fr">
 	<head>

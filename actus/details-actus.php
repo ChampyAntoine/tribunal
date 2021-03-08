@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>Actualité</title>
 		<link rel="stylesheet" href="../css/style.css">
-		<script src=""></script>
 	</head>
 	<body>
 		<?php
@@ -22,15 +21,10 @@
 			else
 			{
 				$tableau=mysqli_fetch_assoc($res);
-				echo "<h1>".$tableau['titre']."</h1>";
-				echo "<h2>".$tableau['auteur']."</h2>";
 				echo "<p>".$tableau['contenu']."</p>";
-				echo "<img src='".$tableau['image']."'><br>";
-				echo "<p>".$tableau['date']."</p>";
 			}
 			
 			mysqli_close($lien);
 		?>
-		<a href="../index.php">Retour à l'accueil</a>
 	</body>
 </html>			

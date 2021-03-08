@@ -7,7 +7,29 @@ $html = <<<HTML
 	<div class="div">
 		<h2>Nos actualités</h2>
 		<section class="section">
-			<a href="banane.php">
+			<article class="art">
+HTML;
+
+include('../config/bdd.php');
+include('../config/outils.php');			
+$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
+$num=nettoyage($lien,$_REQUEST['num']);
+$req="SELECT * FROM actus WHERE ida=$num";
+$res=mysqli_query($lien,$req);
+if(!$res) {
+	echo "Erreur SQL: $req<br>".mysqli_error($lien);
+}
+else {
+	$tableau=mysqli_fetch_assoc($res);
+	$html .= "<h1>".$tableau['nom']."</h1>";
+	$html .= "<img src='".$tableau['image']."'>";
+	$html .= "<p>".$tableau['date']."</p>";
+}
+mysqli_close($lien);
+
+$html .= <<<HTML
+			</article>
+			<a href="./actus/details-actus.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/nouvelle-organisation.png"">
@@ -17,7 +39,19 @@ $html = <<<HTML
 					</div>
 				</article>
 			</a>
-			<a href="banane.php">
+			
+		</section>
+	</div>
+</main>
+
+HTML;
+
+echo($html);
+
+require("include/footer.html");
+
+
+/*<a href="./actus/details-actus.php">
 				<article class="art">
 					<div class="texte-art">
 						<h4>Depuis le 1er janvier 2020, les 5 juridictions ont été ramenées à 3:</h4>
@@ -55,10 +89,4 @@ $html = <<<HTML
 					</div>
 				</article>
 			</a>
-		</section>
-	</div>
-</main>
-HTML;
-
-echo($html);
-require("include/footer.html");
+			*/
