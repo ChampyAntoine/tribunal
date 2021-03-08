@@ -4,7 +4,7 @@ require("include/header.php");
 $html = <<<HTML
 
 <main>
-	<div id="partenaires">
+	<div id="partenaires" class="div">
 		<article class="avocat">
 			<h2>Les avocats</h2>
 			<p>En droit, l'avocat est un juriste dont les fonctions traditionnelles sont de conseiller, représenter, d'assister et de défendre ses clients, personnes physiques ou morales, en justice, en plaidant pour faire valoir leurs droits et, plus généralement, pour les représenter. Par ailleurs, l'avocat s'acquitte d'une fonction de conseil mais aussi de rédacteur d'actes.
