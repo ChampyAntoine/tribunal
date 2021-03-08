@@ -21,11 +21,11 @@ Vous pouvez retouvez 68 avocats à l'Ordre des avocats: Esplanade du Palais de J
 		<article class="huissier">
 			<h2>Les huissiers</h2>
 			<p>L'huissier de justice est un officier exécutant des missions d'ordre légal.<br>
-			Les actes d'huissier de justice sont classés en plusieurs catégories dont il est bon de donner ici un premier aperçu :</p>
+			Les actes d'huissier de justice sont classés en plusieurs catégories dont il est bon de donner ici un premier aperçu :
 <ul>
 <li>La sommation de payer est un acte amiable délivré avant toute procédure valant mise en demeure.</li>
 <li>Les procès-verbaux de saisie conservatoire de créances, de meubles corporels sont des exemples de mesures conservatoires qui peuvent être diligentés avec ou sans autorisation judiciaire selon les cas. Ces mesures conservatoires permettent de prendre une garantie à l'encontre de son débiteur avant qu'une décision de justice soit rendue.</li>
-<li>L'assignation, la citation sont des actes qui informent le justiciable qu'un procès lui est intenté. Les assignations comportent des mentions obligatoires telles que les modalités de représentation, les prétentions de son adversaire...</li>
+<li>L'assignation, la citation sont des actes qui informent le justiciable qu'un procès lui est intenté. Les assignations comportent des mentions obligatoires telles que les modalités de représentation, les prétentions de son adversaire...</li></p>
 		</article>
 	</div>
 <main>
