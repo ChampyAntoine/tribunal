@@ -1,3 +1,6 @@
+<?php
+$html = <<<HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +10,18 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/contact.css">
-    <title><?php echo $title; ?></title>
+    <title>$title</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="nav-adm">
+HTML;
+
+
+$flag = false;
+if($flag == true) {
+    $html.= <<<HTML
+                <div class="nav-adm">
                 <ul class="ul-adm">
                     <a href="ajout-actu.php">
                         <li class="li-adm">
@@ -26,6 +35,9 @@
                     </a>
                 </ul>
             </div>
+HTML;
+}
+$html.= <<<HTML
             <div>
                 <div class="logo">
                     <img src="./src/image/logo.png" alt="" class="img-logo">
@@ -51,3 +63,6 @@
                 <img id="img-carousel" src="./src/image/carrousel.JPG" alt="" >
             </div>
         </header>
+
+HTML;
+echo($html);

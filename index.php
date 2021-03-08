@@ -35,7 +35,7 @@ $html = <<<HTML
 						<img src="./src/image/DSC_0041.JPG">
 					</div>
 					<div class="texte-art">
-						<h3>Tribunal Judiciaire auprès des Conseil de Prud'Hommes</h3>
+						<h3>Tribunal auprès des CPH</h3>
 						<p>Site de l'Arquebuse</p>
 					</div>
 				</article>
@@ -46,7 +46,7 @@ $html = <<<HTML
 						<img src="./src/image/DSC_0078.JPG">
 					</div>
 					<div class="texte-art">
-						<h3>Tribunal de proximité/tribunal de Commerces</h3>
+						<h3>Tribunal de Commerces</h3>
 						<p>Site de Comédie situé à Sedan.</p>
 					</div>
 				</article> 

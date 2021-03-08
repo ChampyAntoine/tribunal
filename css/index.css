@@ -31,6 +31,7 @@ h2 {
 }
 
 #tribunaux a:hover img {
+    transition-duration: 1s;
     transform: scale(1.1);
 }
 
@@ -44,10 +45,12 @@ h2 {
     display: flex;
     flex-direction: column;
     top: 50px;
-    left: -400px;
+    left: -450px;
 }
 
-#tribunaux a:hover .texte-art {
+#tribunaux a:hover .texte-art { 
+    transition-duration: 1s;
+    left: 20px;
 }
 
 .texte-art h3 {
