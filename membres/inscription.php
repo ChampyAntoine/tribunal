@@ -3,19 +3,43 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Inscription</title>
-		<link rel="stylesheet" href="../css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="../css/style-bdd.css">
 		<script src=""></script>
 	</head>
 	<body>
+	<div id="container">
 		<h1>Inscription</h1>
+		<div id="form">
 		<form method="post" enctype="multipart/form-data">
-			Nom : <input type="text" name="nom"><br>
-			Prénom : <input type="text" name="prenom"><br>
-			Email : <input type="email" name="email"><br>
-			Mot de passe : <input type="password" name="mdp1"><br>
-			Confirmation : <input type="password" name="mdp2"><br>
-			<input type="submit" name="inscription" value="Inscription"><br>
-		</form>
+		<div class="form-group">
+			Nom: <input type="text" name="nom" class="form-control">
+		</div>
+		<div class="form-group">
+			Prénom: <input type="text" name="prenom" class="form-control">
+				</div>
+
+		<div class="form-group">
+			Email: <input type="email" name="email" class="form-control">
+					</div>
+
+		<div class="form-group">
+			Mot de passe: <input type="password" name="mdp1" class="form-control">
+				</div>
+
+		<div class="form-group">
+			Confirmation: <input type="password" name="mdp2" class="form-control">
+				</div>
+
+			<input class="submit" type="submit" name="inscription" value="Inscription">
+			</form>
+		</div>
+	</div>	
 		<?php
 			if(isset($_REQUEST['inscription']))
 			{
@@ -65,6 +89,6 @@
 				mysqli_close($lien);
 			}
 		?>
-		<a href="../index.php">Accueil</a>
+		
 	</body>
 </html>
