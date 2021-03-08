@@ -54,17 +54,19 @@ $html = <<<HTML
 		</section>
 	</div>
 
-	<div class="div">
+	<!--<div class="div">
 		<h2>Nos actualités</h2>
 		<section class="section">
-			<article class="art">
-				<div class="img-art">
-					<img src="./src/image/nouvelle-organisation.png" alt="">
-				</div>
-				<div class="texte-art">
-					<h3>Une nouvelle organisation</h3>
-				</div>
-			</article>
+			<a href="actualites.php">
+				<article class="art">
+					<div class="img-art">
+						<img src="./src/image/nouvelle-organisation.png" alt="">
+					</div>
+					<div class="texte-art">
+						<h3>Une nouvelle organisation</h3>
+					</div>
+				</article>
+			</a>
 			<article class="art">
 				<div class="texte-art">
 					<p>Depuis le 1er janvier 2020, les 5 juridictions ont été ramenées à 3 afin de rendre la justice plus accessible et plus lisible. </p>
@@ -74,7 +76,7 @@ $html = <<<HTML
 				</div>
 			</article>
 		</section>
-	</div>
+	</div>-->
 
 	<div class="div droits">
 		<h2>Vos droits</h2>

@@ -55,14 +55,14 @@ h2 {
 
 .texte-art h3 {
     display: inline-block;
-    background-color: #4991F1;
+    background-color: rgba(73,145,241, 0.7);
     margin: 25px 0;
     padding: 10px;
     font-size: 36px;
 }
 .texte-art p {
     display: inline-block;
-    background-color: #4991F1;
+    background-color: rgba(73,145,241, 0.5);
 	color:white;
     margin: 10px 0;
     padding: 10px;
