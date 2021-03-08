@@ -14,7 +14,7 @@
     <div class="container">
         <header>
             <div class="logo">
-                <img src="" alt="" class="img-logo">
+                <img src="./src/image/logo.png" alt="" class="img-logo">
             </div>
             <nav>
                 <ul>
