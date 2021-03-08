@@ -1,0 +1,51 @@
+ body
+ {
+	 font-style: Verdana;
+	 background-color: #DBECFE;
+	 margin-top: 10%;
+	 margin-bottom: 10%;
+ }
+
+#container
+{
+	padding: 5%;
+	margin: 0 auto;
+	width: 60%;
+	height: auto;
+	background-color: white;
+	
+}
+h1, h2
+{
+	text-align: center;
+}
+#tableau
+{
+	margin-top: 1em;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#form
+{
+	display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+form
+{
+	width:50%;
+
+}
+.submit
+{
+	margin-left: 35%;
+	width: 30%;
+	height: auto;
+	border:none;
+	background-color:#DBECFE;
+	
+}
