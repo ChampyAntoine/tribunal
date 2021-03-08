@@ -1,35 +1,37 @@
 .div {
     display: block;
     margin-top: 75px;
-
-	
 }
 
 h2 {
-   
     margin: 0 auto;
     width: 600px;
-	height:auto;
-	font-size: 70px;
+    height:auto;
+    font-size: 70px;
     padding: 20px;
     text-align: center;
-	margin-bottom:75px;
+    margin-bottom:75px;
 }
 
 .section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-	background-color:#F8F8F8;
+    background-color:#F8F8F8;
 }
 
 .art {
     display: flex;
     position: relative;
+    overflow: hidden;
     flex-direction: column;
     width: 500px;
     height: 300px;
     margin: 50px 0;
+}
+
+#tribunaux a:hover img {
+    transform: scale(1.1);
 }
 
 .img-art img {
@@ -39,9 +41,15 @@ h2 {
 
 .texte-art {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 50px;
-    left: 20px;
+    left: -400px;
 }
+
+#tribunaux a:hover .texte-art {
+}
+
 .texte-art h3 {
     display: inline-block;
     background-color: #4991F1;
@@ -77,8 +85,7 @@ h2 {
 }
 .button
 {
-	
-	border: 0;
+    border: 0;
     line-height: 2.5;
     padding: 0 20px;
     font-size: 1rem;

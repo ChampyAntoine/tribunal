@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/modern-normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/contact.css">
@@ -13,24 +12,41 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">
-                <img src="./src/image/logo.png" alt="" class="img-logo">
-            </div>
-            <nav>
-                <ul>
-                    
-                    <a href="index.php"><li>Accueil</li></a>
-                    
-                    <a href="index.php#tribunaux"><li>Tribunaux</li></a>
-                
-                        <a href="partenaires.php"><li>Partenaires de justice</li></a>
-                    
-                        <a href="actualites.php"><li>Nos actualités</li></a>
-                   
-                        <a href="#vosdroits"><li>Vos droits</li></a>
-                   
+            <div class="nav-adm">
+                <ul class="ul-adm">
+                    <a href="ajout-actu.php">
+                        <li class="li-adm">
+                            Ajout actualité
+                        </li>
+                    </a>
+                    <a href="gest-actu.php">
+                        <li class="li-adm">
+                            Gestion actualités
+                        </li>
+                    </a>
                 </ul>
-            </nav>
+            </div>
+            <div>
+                <div class="logo">
+                    <img src="./src/image/logo.png" alt="" class="img-logo">
+                </div>
+                <nav>
+                    <ul>
+                        
+                        <a href="index.php"><li>Accueil</li></a>
+                        
+                        <a href="index.php#tribunaux"><li>Tribunaux</li></a>
+                    
+                        <a href="partenaires.php"><li>Partenaires de justice</li></a>
+                        
+                        <a href="actualites.php"><li>Nos actualités</li></a>
+                    
+                        <a href="#vosdroits"><li>Vos droits</li></a>
+                    
+                    </ul>
+                </nav>
+            </div>
+            
             <div class="carousel">
                 <img id="img-carousel" src="./src/image/carrousel.JPG" alt="" >
             </div>
