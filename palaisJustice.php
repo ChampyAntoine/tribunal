@@ -28,20 +28,22 @@ $html = <<<HTML
 				</div>
 			</article>
 			</section>
+			
+			<article class="tribunal">
 			<section class="section">
-			<article class="art">
 			<div class="texte-tri">
 					<h3>Contact</h3>
 					<p>9 Espl. du Palais de Justice, 08000 Charleville-Mézières, France.</p>
 					<p>+33324576900</p>
 				</div>
+				</section>
+				<section class="section">
 				<div class="img-art">
 					<img src="./src/image/carte-palais_de_justice.png">
 				</div>
-
-			</article>
 			</section>
-			</div>
+			</article>
+			
 <main>
 HTML;
 
