@@ -1,3 +1,3 @@
-# Blog
-## TP de Licence Pro
-Site PHP simple de publication d'actualités et de gestion de rédacteurs.
+# Tribunal
+## Projet de site web pour le tribunal de Charleville
+Site PHP simple de publication d'actualités.
