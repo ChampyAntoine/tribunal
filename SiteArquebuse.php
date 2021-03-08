@@ -9,7 +9,7 @@ $html = <<<HTML
 		<section class="section">
 			<article class="art">
 				<div class="img-art">
-					<img src="tribunal3.png">
+					<img src="./src/image/DSC_0041.JPG">
 				</div>
 				</section>
 				<section class="section">
@@ -22,19 +22,22 @@ $html = <<<HTML
 				</div>
 			</article>
 			</section>
-			<section class="section">
-			<article class="art">
-				
+			
+			<article class="tribunal">
+				<section class="section">
 				<div class="texte-tri">
 					<h3>Contact</h3>
 					<p>20 Rue de l'Arquebuse, 08000 Charleville-Mézières, France</p>
 					<p>+33324598888</p>
 				</div>
+				</section>
+				<section class="section">
 				<div class="img-art">
-					<img src="tribunal2.png">
+					<img src="./src/image/carte-arquebuse.png">
 				</div>
+				</section>
 			</article>
-	</div>		
+			
 <main>
 HTML;
 
