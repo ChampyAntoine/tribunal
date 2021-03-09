@@ -10,9 +10,9 @@ $html = <<<HTML
 			<article class="art">
 HTML;
 
-include('../config/bdd.php');
-include('../config/outils.php');			
-$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
+include('./config/bdd.php');
+include('./config/outils.php');			
+$lien=mysqli_connect(SERVEUR,LOGIN,"",BASE);
 $num=nettoyage($lien,$_REQUEST['num']);
 $req="SELECT * FROM actus WHERE ida=$num";
 $res=mysqli_query($lien,$req);
