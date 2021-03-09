@@ -27,11 +27,12 @@ else
     $connecte=true;
 }
 
-if($connecte == true) {
+if(($connecte==true)and($_SESSION['admin']==1))
+	{
     $html.= <<<HTML
                 <div class="nav-adm">
                 <ul class="ul-adm">
-                    <a href="ajout-actu.php">
+                    <a href="../actus/ajout-actus.php">
                         <li class="li-adm">
                             Ajout actualité
                         </li>
@@ -43,6 +44,25 @@ if($connecte == true) {
                     </a>
                 </ul>
             </div>
+HTML;
+}
+else 
+{
+    $html.= <<<HTML
+    <div class="nav-adm">
+        <ul class="ul-adm">
+            <a href="./membres/inscription.php">
+                <li class="li-adm">
+                    Inscription
+                </li>
+            </a>
+            <a href="login.php">
+                <li class="li-adm">
+                    Login
+                </li>
+            </a>
+        </ul>
+    </div>
 HTML;
 }
 $html.= <<<HTML

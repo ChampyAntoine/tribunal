@@ -42,7 +42,6 @@ if(isset($_REQUEST['ajouter']))
 	$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);				
 	$titre=nettoyage($lien,$_REQUEST['titre']);
 	$contenu=nettoyage($lien,$_REQUEST['contenu']);
-	$auteur=$_SESSION['idm'];
 	$date=date("Y-m-d H:i:s");
 	$extensionsvalides=array('gif','jpg','png','jpeg','svg');
 	$extension=strtolower(substr(strrchr($_FILES['image']['name'],"."),1));
@@ -61,7 +60,7 @@ else
 	echo "Pas d'image ou image invalide<br>";
 	$destination="";
 }
-$req="INSERT INTO actus VALUES(NULL,'$titre','$contenu','$auteur','$date','$destination')";
+$req="INSERT INTO actus VALUES(NULL,'$titre','$contenu','$destination','$date')";
 $res=mysqli_query($lien,$req);
 
 if(!$res)

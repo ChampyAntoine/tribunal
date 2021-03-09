@@ -34,10 +34,10 @@
 					<input type="password" name="mdp1" class="form-control">
 				</div>
 
-				<div class="form-group">
+				<!-- <div class="form-group">
 					<label for="">Confirmation</label>
 					<input type="password" name="mdp2" class="form-control">
-				</div>
+				</div> -->
 
 				<input class="submit" type="submit" name="inscription" value="Inscription">
 			</form>
@@ -52,9 +52,8 @@
 					$prenom=nettoyage($lien,$_REQUEST['prenom']);
 					$email=nettoyage($lien,$_REQUEST['email']);
 					$mdp1=md5($_REQUEST['mdp1']);
-					$mdp2=md5($_REQUEST['mdp2']);
 					
-					if($mdp1==$mdp2)
+					if($mdp1 != "")
 					{
 						$req="SELECT * FROM membres WHERE email='$email'";
 						$res=mysqli_query($lien,$req);

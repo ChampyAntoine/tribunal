@@ -35,7 +35,7 @@
 				$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
 				$email=nettoyage($lien,$_REQUEST['email']);
 				$mdp=md5($_REQUEST['mdp']);
-				$req="SELECT * FROM membres WHERE email='$email' AND mdp='$mdp'";
+				$req="SELECT * FROM membres WHERE email='$email' AND mdp1='$mdp'";
 				$res=mysqli_query($lien,$req);
 				if(!$res)
 				{
