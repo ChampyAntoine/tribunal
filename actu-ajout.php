@@ -2,10 +2,10 @@
 
 $title = "Ajout actualité";
 require("include/header.php");
-if(!isset($_SESSION['idm']) or !isset($_SESSION['nom']) or !isset($_SESSION['prenom']) or !isset($_SESSION['email']))
-{
-	header("Location:index.php");
-}
+	if(!isset($_SESSION['idm']) or !isset($_SESSION['nom']) or !isset($_SESSION['prenom']) or !isset($_SESSION['email']))
+	{
+		header("Location:index.php");
+	}
 
 $html = <<<HTML
 		<div id="container">
@@ -21,7 +21,7 @@ $html = <<<HTML
 				</div>
 				<div class="form-group">
 					<label for="">Contenu HTML de l'actualité</label>
-					<textarea id="mytextarea" name="mytextarea"></textarea>
+					<textarea id="mytextarea" class="form-control" name="mytextarea"></textarea>
 				</div>
 
 				<input class="submit" type="submit" name="ajouter" value="Ajouter l'actualité"><br>
@@ -31,11 +31,12 @@ HTML;
 
 if(isset($_REQUEST['ajouter']))
 {
+	var_dump($_REQUEST);
 	include('config/bdd.php');
 	include('config/outils.php');
 	$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);				
 	$titre=nettoyage($lien,$_REQUEST['titre']);
-	$contenu=nettoyage($lien,$_REQUEST['contenu']);
+	$contenu=nettoyage($lien,$_REQUEST['mytextarea']);
 	$date=date("Y-m-d H:i:s");
 	$extensionsvalides=array('gif','jpg','png','jpeg','svg');
 	$extension=strtolower(substr(strrchr($_FILES['image']['name'],"."),1));
