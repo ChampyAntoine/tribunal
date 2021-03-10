@@ -1,6 +1,6 @@
 <?php
 $title = "Site de Sévigné";
-require("include/header.php");
+require("header.php");
 $html = <<<HTML
 
 <main>
