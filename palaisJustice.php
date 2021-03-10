@@ -1,6 +1,6 @@
 <?php
 $title = "Palais de Justice";
-require("include/header.php");
+require("header.php");
 $html = <<<HTML
 
 <main>
