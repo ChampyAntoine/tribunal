@@ -10,8 +10,8 @@ $html = <<<HTML
 			<article class="art">
 HTML;
 
-include('./config/bdd.php');
-include('./config/outils.php');			
+include('bdd.php');
+include('outils.php');			
 $lien=mysqli_connect(SERVEUR,LOGIN,"",BASE);
 $num=nettoyage($lien,$_REQUEST['num']);
 $req="SELECT * FROM actus WHERE ida=$num";
@@ -29,7 +29,7 @@ mysqli_close($lien);
 
 $html .= <<<HTML
 			</article>
-			<a href="./actus/details-actus.php">
+			<a href="details-actus.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/nouvelle-organisation.png"">
