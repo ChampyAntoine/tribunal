@@ -21,7 +21,8 @@
 			else
 			{
 				$tableau=mysqli_fetch_assoc($res);
-				var_dump ($tableau['contenu']);
+				$tableau['contenu'] = html_entity_decode($tableau['contenu']);;
+				echo ($tableau['contenu']);
 			}
 			
 			mysqli_close($lien);

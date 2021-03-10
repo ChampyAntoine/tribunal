@@ -90,7 +90,7 @@ $html.= <<<HTML
         </div>
         
         <div class="carousel">
-            <img id="img-carousel" src="src/image/carousel.jpg" alt="" >
+            <img id="img-carousel" src="src/image/carrousel.jpg" alt="" >
         </div>
     </header>
 

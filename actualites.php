@@ -25,7 +25,6 @@ else {
 	$html .= "<img src='".$tableau['image']."'>";
 	$html .= "<p>".$tableau['date']."</p>";
 	$html .= "</a></article>";
-	echo(1);
 	}
 }
 mysqli_close($lien);

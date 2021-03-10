@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Inscription</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="./css/style-bdd.css">
 	</head>
 	<body>
@@ -36,6 +37,8 @@
 
 				<input class="submit" type="submit" name="inscription" value="Inscription">
 			</form>
+			<p>Déjà membre ?</p>
+			<a href="m-connexion.php">Connectez vous</a>
 		</div>	
 			<?php
 				if(isset($_REQUEST['inscription']))
@@ -65,26 +68,26 @@
 								$res=mysqli_query($lien,$req);
 								if(!$res)
 								{
-									echo "Erreur SQL: $req<br>".mysqli_error($lien);
+									echo "Erreur SQL: $req".mysqli_error($lien);
 								}
 								else
 								{
-									echo "Inscription réussie<br>";
+									echo "Inscription réussie";
+									header("Location:m-connexion.php");
 								}
 							}
 							else 
 							{
-								echo "Adresse email déjà utilisée<br>";
+								echo "Adresse email déjà utilisée";
 							}
 						}	
 					}
 					else
 					{
-						echo "Les mots de passe sont différents<br>";
+						echo "Les mots de passe sont différents";
 					}
 					mysqli_close($lien);
 				}
-			?>
-			
+			?>			
 	</body>
 </html>
