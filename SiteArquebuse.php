@@ -1,6 +1,6 @@
 <?php
 $title = "Site de L'arquebuse";
-require("include/header.php");
+require("header.php");
 $html = <<<HTML
 
 <main>
