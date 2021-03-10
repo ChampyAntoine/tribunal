@@ -2,7 +2,7 @@
 	session_start();
 	if(!isset($_SESSION['idm']) or !isset($_SESSION['nom']) or !isset($_SESSION['prenom']) or !isset($_SESSION['email']))
 	{
-		header("index.php");
+		header("Location:index.php");
 		exit;
 	}
 	else

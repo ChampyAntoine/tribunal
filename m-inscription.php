@@ -40,8 +40,8 @@
 			<?php
 				if(isset($_REQUEST['inscription']))
 				{
-					include('bdd.php');
-					include('outils.php');
+					include('config/bdd.php');
+					include('config/outils.php');
 					$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
 					$nom=nettoyage($lien,$_REQUEST['nom']);
 					$prenom=nettoyage($lien,$_REQUEST['prenom']);
@@ -61,7 +61,7 @@
 							$nb=mysqli_num_rows($res);
 							if($nb==0)
 							{
-								$req="INSERT INTO membres VALUES(NULL,'$email','$nom','$prenom','$mdp1',0,0)";
+								$req="INSERT INTO membres VALUES(NULL,'$email','$nom','$prenom','$mdp1',0)";
 								$res=mysqli_query($lien,$req);
 								if(!$res)
 								{

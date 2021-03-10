@@ -1,13 +1,13 @@
 <?php
 $title = "Accueil";
-require("header.php");
+require("include/header.php");
 $html = <<<HTML
 
 <main>
 	<div id="tribunaux" class="div">
 		<h2>Les tribunaux</h2>
 		<section class="section">
-			<a href="palaisJustice.php">
+			<a href="siteEsplanade.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/DSC_0030.JPG">
@@ -29,7 +29,7 @@ $html = <<<HTML
 					</div>
 				</article>
 			</a>
-			<a href="SiteArquebuse.php">
+			<a href="siteArquebuse.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/DSC_0041.JPG">
@@ -40,7 +40,7 @@ $html = <<<HTML
 					</div>
 				</article>
 			</a>
-			<a href="SiteComedie.php">
+			<a href="siteComedie.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/DSC_0078.JPG">
@@ -78,7 +78,7 @@ $html = <<<HTML
 		</section>
 	</div>-->
 
-	<div class="div droits">
+	<div id="vosdroits"class="div droits">
 		<h2>Vos droits</h2>
 		<section class="section">
 		<p> Veuillez trouver sur ces sites de justices, les dispositifs qui sont à disposition des citoyens et des justiciables.

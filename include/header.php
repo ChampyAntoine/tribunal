@@ -35,32 +35,32 @@ if(($connecte==true))
 	{
     if($_SESSION['admin']==1){
         $html.= <<<HTML
-                <a href="ajout-actus.php">
+                <a href="actu-ajout.php">
                     <li class="li-adm">
                         Ajout actualité
                     </li>
                 </a>
-                <a href="modif-actus.php">
+                <a href="actu-modif.php">
                     <li class="li-adm">
                         Gestion actualités
                     </li>
                 </a>
         HTML;
     }
-    $html.= "<a href='deconnexion.php'><li class='li-adm'>deconnexion</li></a>";
+    $html.= "<a href='m-deconnexion.php'><li class='li-adm'>deconnexion</li></a>";
 
 }
 else
 {
     $html.= <<<HTML
-            <a href="inscription.php">
+            <a href="m-inscription.php">
                 <li class="li-adm">
                     Inscription
                 </li>
             </a>
-            <a href="login.php">
+            <a href="m-connexion.php">
                 <li class="li-adm">
-                    Login
+                    Connexion
                 </li>
             </a>
 HTML;
@@ -83,7 +83,7 @@ $html.= <<<HTML
                     
                     <a href="actualites.php"><li>Nos actualités</li></a>
                 
-                    <a href="#vosdroits"><li>Vos droits</li></a>
+                    <a href="index.php#vosdroits"><li>Vos droits</li></a>
 
                 </ul>
             </nav>

@@ -2,7 +2,7 @@
 	session_start();
 	if(!isset($_SESSION['idm']) or !isset($_SESSION['nom']) or !isset($_SESSION['prenom']) or !isset($_SESSION['email']) or ($_SESSION['admin']==0))
 	{
-		header("Location: ../index.php");
+		header("Location: ./index.php");
 		exit;
 	}
 ?>
@@ -12,13 +12,12 @@
 		<meta charset="utf-8">
 		<title>Activation des membres</title>
 		<link rel="stylesheet" href="css/style.css">
-		<script src=""></script>
 	</head>
 	<body>
 		<h1>Activation des membres</h1>
 		<?php
-			include('bdd.php');
-			include('outils.php');
+			include('config/bdd.phpbdd.php');
+			include('config/outils.php');
 			$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
 			
 			if(isset($_REQUEST['num']))

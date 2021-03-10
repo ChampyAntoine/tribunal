@@ -1,6 +1,6 @@
 <?php
 $title = "Partenaire de justice";
-require("header.php");
+require("include/header.php");
 $html = <<<HTML
 
 <main>

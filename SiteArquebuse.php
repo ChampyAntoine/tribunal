@@ -1,6 +1,6 @@
 <?php
 $title = "Site de L'arquebuse";
-require("header.php");
+require("include/header.php");
 $html = <<<HTML
 
 <main>
@@ -33,12 +33,12 @@ $html = <<<HTML
 				</section>
 				<section class="section">
 				<div class="img-art">
-					<img src="./src/image/carte-arquebuse.png">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.7977883604885!2d4.719476565384348!3d49.77106057938735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ea0e08d99a36cd%3A0x8a426edd745ff84f!2sConseil%20des%20Prud&#39;Hommes!5e0!3m2!1sfr!2sfr!4v1615380781042!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
-				</section>
-			</article>
+			</section>
+		</article>
 			
-<main>
+</main>
 HTML;
 
 echo($html);

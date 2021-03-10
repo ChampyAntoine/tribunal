@@ -37,8 +37,8 @@
 <?php
 if(isset($_REQUEST['ajouter']))
 {
-	include('bdd.php');
-	include('outils.php');
+	include('config/bdd.php');
+	include('config/outils.php');
 	$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);				
 	$titre=nettoyage($lien,$_REQUEST['titre']);
 	$contenu=nettoyage($lien,$_REQUEST['contenu']);
@@ -47,7 +47,7 @@ if(isset($_REQUEST['ajouter']))
 	$extension=strtolower(substr(strrchr($_FILES['image']['name'],"."),1));
 if(in_array($extension, $extensionsvalides))
 {
-$destination="../images/".uniqid().".$extension";
+$destination="./images/".uniqid().".$extension";
 $envoi=move_uploaded_file($_FILES['image']['tmp_name'],$destination);
 if(!$envoi)
 {

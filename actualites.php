@@ -7,23 +7,26 @@ $html = <<<HTML
 	<div class="div">
 		<h2>Nos actualités</h2>
 		<section class="section">
-			<article class="art">
 HTML;
 
-include('bdd.php');
-include('outils.php');			
-$lien=mysqli_connect(SERVEUR,LOGIN,"",BASE);
-$num=nettoyage($lien,$_REQUEST['num']);
-$req="SELECT * FROM actus WHERE ida=$num";
+include('config/bdd.php');
+include('config/outils.php');			
+$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
+$req="SELECT * FROM actus ORDER BY date DESC";
 $res=mysqli_query($lien,$req);
 if(!$res) {
 	echo "Erreur SQL: $req<br>".mysqli_error($lien);
 }
 else {
-	$tableau=mysqli_fetch_assoc($res);
-	$html .= "<h1>".$tableau['nom']."</h1>";
+	while($tableau=mysqli_fetch_assoc($res))
+	{
+	$html .="<article class='art'><a href='actu-detail.php?num=".$tableau['ida']."'>";
+	$html .= "<h1>".$tableau['titre']."</h1>";
 	$html .= "<img src='".$tableau['image']."'>";
 	$html .= "<p>".$tableau['date']."</p>";
+	$html .= "</a></article>";
+	echo(1);
+	}
 }
 mysqli_close($lien);
 
