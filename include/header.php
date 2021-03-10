@@ -9,8 +9,15 @@ $html = <<<HTML
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/style-bdd.css">
+    <link rel="stylesheet" href="./css/actu.css">
+    <script src="https://cdn.tiny.cloud/1/r5tnbfjt6hc8uafwbzzesoprbw9sjibntt2x18qoloeib2uv/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    
+    <script>
+    tinymce.init({
+      selector: '#mytextarea'
+    });
+  </script>
     <title>$title</title>
 </head>
 <body>
@@ -87,10 +94,6 @@ $html.= <<<HTML
 
                 </ul>
             </nav>
-        </div>
-        
-        <div class="carousel">
-            <img id="img-carousel" src="src/image/carrousel.jpg" alt="" >
         </div>
     </header>
 

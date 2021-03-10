@@ -1,0 +1,38 @@
+.actu-detail h1
+ {
+	 text-align:center;
+ }
+ .actu-detail img
+ {
+	 display:flex;
+	 flex-wrap:wrap;
+	 margin: 0 auto;
+	 margin-top:30px;
+	 width: 10%;
+ }
+
+ .actu-detailp {
+	margin:0 auto;
+	 text-align:justify;
+	 width: 50%;
+ }
+
+	
+
+ .actu-detail h2
+{
+	text-align:center;
+	background-color: #4991F1;
+	color:white;
+}
+
+.actu-detail body
+{
+	font-family:verdana;
+}
+
+.actu-detail .div {
+    display: block;
+    margin-top: 75px;
+	background-color:#F8F8F8;
+}

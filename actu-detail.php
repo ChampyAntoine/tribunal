@@ -1,31 +1,29 @@
-<!doctype html>
-<html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<title>Actualité</title>
-		<link rel="stylesheet" href="./css/style.css">
-	</head>
-	<body>
-		<?php
-			include('config/bdd.php');
-			include('config/outils.php');			
-			$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
-			$num=nettoyage($lien,$_REQUEST['num']);
-			$req="SELECT * FROM actus WHERE ida=$num";
-			$res=mysqli_query($lien,$req);
+<?php
+
+require('config/bdd.php');
+require('config/outils.php');
 			
-			if(!$res)
-			{
-				echo "Erreur SQL: $req<br>".mysqli_error($lien);
-			}
-			else
-			{
-				$tableau=mysqli_fetch_assoc($res);
-				$tableau['contenu'] = html_entity_decode($tableau['contenu']);;
-				echo ($tableau['contenu']);
-			}
-			
-			mysqli_close($lien);
-		?>
+$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
+$num=nettoyage($lien,$_REQUEST['num']);
+$req="SELECT * FROM actus WHERE ida=$num";
+$res=mysqli_query($lien,$req);
+
+if(!$res)
+{
+	echo "Erreur SQL: $req<br>".mysqli_error($lien);
+}
+else
+{
+	$tableau=mysqli_fetch_assoc($res);
+	$title = $tableau['titre'];
+	require("include/header.php");
+	echo("<div class='actu-detail'>");
+	$tableau['contenu'] = html_entity_decode($tableau['contenu']);;
+	echo ($tableau['contenu']);
+	echo("</div>");
+}
+
+mysqli_close($lien);
+?>
 	</body>
 </html>			

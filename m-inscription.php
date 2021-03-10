@@ -1,13 +1,7 @@
-<!doctype html>
-<html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<title>Inscription</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./css/style-bdd.css">
-	</head>
-	<body>
+<?php
+$title = "Inscrivez vous";
+require("include/header.php");
+$html = <<<HTML
 		<div id="container">
 			<h1>Inscription</h1>
 			<form method="post" enctype="multipart/form-data">
@@ -39,55 +33,57 @@
 			</form>
 			<p>Déjà membre ?</p>
 			<a href="m-connexion.php">Connectez vous</a>
-		</div>	
-			<?php
-				if(isset($_REQUEST['inscription']))
+		</div>
+HTML;	
+
+if(isset($_REQUEST['inscription']))
+{
+	include('config/bdd.php');
+	include('config/outils.php');
+	$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
+	$nom=nettoyage($lien,$_REQUEST['nom']);
+	$prenom=nettoyage($lien,$_REQUEST['prenom']);
+	$email=nettoyage($lien,$_REQUEST['email']);
+	$mdp1=md5($_REQUEST['mdp1']);
+	
+	if($mdp1 != "")
+	{
+		$req="SELECT * FROM membres WHERE email='$email'";
+		$res=mysqli_query($lien,$req);
+		if(!$res)
+		{
+			echo "Erreur SQL: $req<br>".mysqli_error($lien);
+		}
+		else
+		{
+			$nb=mysqli_num_rows($res);
+			if($nb==0)
+			{
+				$req="INSERT INTO membres VALUES(NULL,'$email','$nom','$prenom','$mdp1',0)";
+				$res=mysqli_query($lien,$req);
+				if(!$res)
 				{
-					include('config/bdd.php');
-					include('config/outils.php');
-					$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
-					$nom=nettoyage($lien,$_REQUEST['nom']);
-					$prenom=nettoyage($lien,$_REQUEST['prenom']);
-					$email=nettoyage($lien,$_REQUEST['email']);
-					$mdp1=md5($_REQUEST['mdp1']);
-					
-					if($mdp1 != "")
-					{
-						$req="SELECT * FROM membres WHERE email='$email'";
-						$res=mysqli_query($lien,$req);
-						if(!$res)
-						{
-							echo "Erreur SQL: $req<br>".mysqli_error($lien);
-						}
-						else
-						{
-							$nb=mysqli_num_rows($res);
-							if($nb==0)
-							{
-								$req="INSERT INTO membres VALUES(NULL,'$email','$nom','$prenom','$mdp1',0)";
-								$res=mysqli_query($lien,$req);
-								if(!$res)
-								{
-									echo "Erreur SQL: $req".mysqli_error($lien);
-								}
-								else
-								{
-									echo "Inscription réussie";
-									header("Location:m-connexion.php");
-								}
-							}
-							else 
-							{
-								echo "Adresse email déjà utilisée";
-							}
-						}	
-					}
-					else
-					{
-						echo "Les mots de passe sont différents";
-					}
-					mysqli_close($lien);
+					echo "Erreur SQL: $req".mysqli_error($lien);
 				}
-			?>			
+				else
+				{
+					echo "Inscription réussie";
+					header("Location:m-connexion.php");
+				}
+			}
+			else 
+			{
+				echo "Adresse email déjà utilisée";
+			}
+		}	
+	}
+	else
+	{
+		echo "Les mots de passe sont différents";
+	}
+	mysqli_close($lien);
+}
+echo($html);
+?>			
 	</body>
 </html>

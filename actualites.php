@@ -1,6 +1,7 @@
 <?php
 $title = "Actualités";
 require("include/header.php");
+require("include/carousel.php");
 $html = <<<HTML
 
 <main>
@@ -20,75 +21,19 @@ if(!$res) {
 else {
 	while($tableau=mysqli_fetch_assoc($res))
 	{
-	$html .="<article class='art'><a href='actu-detail.php?num=".$tableau['ida']."'>";
-	$html .= "<h1>".$tableau['titre']."</h1>";
-	$html .= "<img src='".$tableau['image']."'>";
-	$html .= "<p>".$tableau['date']."</p>";
-	$html .= "</a></article>";
+	$html .="<a class='lien-a' href='actu-detail.php?num=".$tableau['ida']."'><article class='art'>";
+	$html .= "<div class='img-art'><img src='".$tableau['image']."'></div>";
+	$html .= "<div class='texte-art'><h3>".$tableau['titre']."</h3></div>";
+	$html .= "</article></a>";
 	}
 }
 mysqli_close($lien);
 
 $html .= <<<HTML
-			</article>
-			<a href="details-actus.php">
-				<article class="art">
-					<div class="img-art">
-						<img src="./src/image/nouvelle-organisation.png"">
-					</div>
-					<div class="texte-art">
-						<h3>Une nouvelle organisation</h3>
-					</div>
-				</article>
-			</a>
-			
 		</section>
 	</div>
 </main>
-
 HTML;
 
 echo($html);
-
 require("include/footer.html");
-
-
-/*<a href="./actus/details-actus.php">
-				<article class="art">
-					<div class="texte-art">
-						<h4>Depuis le 1er janvier 2020, les 5 juridictions ont été ramenées à 3:</h4>
-						<ul> 
-							<li>
-								le tribunal judiciaire ayant son siège à Charleville-Mézières,et doté d’une chambre de proximité à Sedan
-							</li>
-							<li>
-								le conseil de prud’hommes à Charleville-Mézières
-							</li>
-							<li>
-								le tribunal de commerce à Sedan.
-							</li>
-						</ul>
-						<h4>3 sites sur Charleville-Mézières:</h4>
-						<ul>
-							<li>
-								le site du « Palais de justice », propriété de l’État
-							</li>
-							<li>
-								le site du « 12 rue Madame de Sévigné », propriété du département, et local de l’ancien TI
-							</li>
-							<li>
-								le site du « 20 rue de l’Arquebuse », propriété de la commune, et local du conseil de prud’hommes.
-							</li>
-						</ul>
-						<p>
-							Le Palais de Justice est le chef des autres tribunaux
-						</p>
-						<h4>1 site sur Sedan:</h4>
-						<ul>
-							<li>le site du « 1 rue de la Comédie », propriété de la commune, et local de la chambre de proximité (ancien TI) comme du tribunal de commerce.
-							</li>
-						</ul>
-					</div>
-				</article>
-			</a>
-			*/

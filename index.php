@@ -1,13 +1,14 @@
 <?php
 $title = "Accueil";
 require("include/header.php");
+require("include/carousel.php");
 $html = <<<HTML
 
 <main>
 	<div id="tribunaux" class="div">
 		<h2>Les tribunaux</h2>
 		<section class="section">
-			<a href="siteEsplanade.php">
+			<a class="lien-a" href="siteEsplanade.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/DSC_0030.JPG">
@@ -18,7 +19,7 @@ $html = <<<HTML
 					</div>
 				</article>
 			</a>
-			<a href="siteSevigne.php">
+			<a class="lien-a" href="siteSevigne.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/DSC_0034.JPG">
@@ -29,7 +30,7 @@ $html = <<<HTML
 					</div>
 				</article>
 			</a>
-			<a href="siteArquebuse.php">
+			<a class="lien-a" href="siteArquebuse.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/DSC_0041.JPG">
@@ -40,7 +41,7 @@ $html = <<<HTML
 					</div>
 				</article>
 			</a>
-			<a href="siteComedie.php">
+			<a class="lien-a" href="siteComedie.php">
 				<article class="art">
 					<div class="img-art">
 						<img src="./src/image/DSC_0078.JPG">

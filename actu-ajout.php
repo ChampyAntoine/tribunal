@@ -1,19 +1,13 @@
 <?php
-	session_start();
-	if(!isset($_SESSION['idm']) or !isset($_SESSION['nom']) or !isset($_SESSION['prenom']) or !isset($_SESSION['email']))
-	{
-		header("Location:index.php");
-	}
-?>
-<!doctype html>
-<html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<title>Ajout d'une actualité</title>
-		<link rel="stylesheet" href="./css/style-bdd.css">
-		<script src=""></script>
-	</head>
-	<body>
+
+$title = "Ajout actualité";
+require("include/header.php");
+if(!isset($_SESSION['idm']) or !isset($_SESSION['nom']) or !isset($_SESSION['prenom']) or !isset($_SESSION['email']))
+{
+	header("Location:index.php");
+}
+
+$html = <<<HTML
 		<div id="container">
 			<h1>Ajout d'une actualité</h1>
 			<form method="post" enctype="multipart/form-data">
@@ -27,14 +21,14 @@
 				</div>
 				<div class="form-group">
 					<label for="">Contenu HTML de l'actualité</label>
-					<textarea name="contenu" class="form-control"></textarea>
+					<textarea id="mytextarea" name="mytextarea"></textarea>
 				</div>
 
 				<input class="submit" type="submit" name="ajouter" value="Ajouter l'actualité"><br>
 			</form>
 		</div>
-		
-<?php
+HTML;
+
 if(isset($_REQUEST['ajouter']))
 {
 	include('config/bdd.php');
@@ -74,6 +68,7 @@ else
 
 mysqli_close($lien);
 }
+echo($html);
 ?>
 	</body>
 </html>

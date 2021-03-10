@@ -17,8 +17,8 @@
 	<body>
 		<h1>Modification d'une actualité</h1>
 		<?php
-			include('bdd.php');				
-			include('outils.php');
+			include('config/bdd.php');				
+			include('config/outils.php');
 			$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
 			$num=nettoyage($lien,$_REQUEST['num']);
 			if(isset($_REQUEST['modifier']))
