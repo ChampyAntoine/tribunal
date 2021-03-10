@@ -7,8 +7,8 @@
 	</head>
 	<body>
 		<?php
-			include('bdd.php');
-			include('outils.php');			
+			include('config/bdd.php');
+			include('config/outils.php');			
 			$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
 			$num=nettoyage($lien,$_REQUEST['num']);
 			$req="SELECT * FROM actus WHERE ida=$num";
@@ -21,7 +21,7 @@
 			else
 			{
 				$tableau=mysqli_fetch_assoc($res);
-				echo "<p>".$tableau['contenu']."</p>";
+				var_dump ($tableau['contenu']);
 			}
 			
 			mysqli_close($lien);

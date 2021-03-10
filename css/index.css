@@ -81,9 +81,11 @@ h2 {
 .droits li {
     background-color: royalblue;
     margin: 10px 0;
+    min-width: 500px;
     padding: 10px 150px;
     font-size: 24px;
 	color:white;
+    text-align: center;
     
 }
 .button
@@ -128,10 +130,18 @@ input
 	padding-top:5px;
 	padding-bottom:5px;
 }
-.texte-tri p, .avocat p, .notaire p, .huissier p~ul
-{
-	text-align:justify;
-	width:600px;
-	height:auto;
+
+#partenaires article {
+    display: flex;
+    flex-direction: column;
+}
+
+#partenaires article div{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#partenaires p, #partenaires li {
+    text-align: justify;
 }
 
