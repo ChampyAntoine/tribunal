@@ -30,8 +30,8 @@
 		<?php
 			if(isset($_REQUEST['connexion']))
 			{
-				include('./config/bdd.php');
-				include('./config/outils.php');
+				include('bdd.php');
+				include('outils.php');
 				$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
 				$email=nettoyage($lien,$_REQUEST['email']);
 				$mdp=md5($_REQUEST['mdp']);
@@ -54,7 +54,7 @@
 						$_SESSION['email']=$tableau['email'];
 						$_SESSION['admin']=$tableau['admin'];
 						mysqli_close($lien);
-						header("Location: ./index.php");
+						header("Location:index.php");
 					}
 					else
 					{
