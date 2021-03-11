@@ -5,7 +5,7 @@ $html = <<<HTML
 
 <main>
 	<div id="tribunaux" class="div">
-		<h2>Site Madame de Sévigné (ancien tribunal d'instance)</h2>
+		<h2 class="h2">Site Madame de Sévigné (ancien tribunal d'instance)</h2>
 		<section class="section">
 			<article class="art">
 				<div class="img-art">

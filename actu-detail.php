@@ -17,14 +17,15 @@ else
 	$tableau=mysqli_fetch_assoc($res);
 	$title = $tableau['titre'];
 	require("include/header.php");
-	echo("<div class='actu-detail'>");
-	$tableau['contenu'] = html_entity_decode($tableau['contenu']);;
+	echo("<div class='actu-detail'><div class='div'>");
+	$tableau['contenu'] = html_entity_decode($tableau['contenu']);
 	echo ($tableau['contenu']);
-	echo("</div>");
+	echo("</div></div>");
 }
 
 mysqli_close($lien);
 require("include/footer.php");
 ?>
+
 	</body>
 </html>			

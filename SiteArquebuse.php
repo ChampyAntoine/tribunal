@@ -5,7 +5,7 @@ $html = <<<HTML
 
 <main>
 	<div id="tribunaux" class="div">
-		<h2>Site de l'Arquebuse (aux côtés du CPH)</h2>
+		<h2 class="h2">Site de l'Arquebuse (aux côtés du CPH)</h2>
 		<section class="section">
 			<article class="art">
 				<div class="img-art">

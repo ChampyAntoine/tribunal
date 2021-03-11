@@ -8,8 +8,9 @@ $html = <<<HTML
 
 <main>
 	<div id="partenaires" class="div">
+	<section class="section">
 		<article class="avocat">
-			<h2>Les avocats</h2>
+			<h2 class="h2">Les avocats</h2>
 			<div>
 				<p>
 					En droit, l'avocat est un juriste dont les fonctions traditionnelles sont de conseiller, représenter, d'assister et de défendre ses clients, personnes physiques ou morales, en justice, en plaidant pour faire valoir leurs droits et, plus généralement, pour les représenter. Par ailleurs, l'avocat s'acquitte d'une fonction de conseil mais aussi de rédacteur d'actes.
@@ -25,7 +26,7 @@ $html = <<<HTML
 		</article>
 		
 		<article class="notaire">
-			<h2>Les Notaires</h2>
+			<h2 class="h2">Les Notaires</h2>
 			<div>
 				<p>
 					En droit français, le notaire est un officier public, nommé par décision du Garde des Sceaux. Il est, à ce titre, investi d’une délégation de puissance publique. Le notaire éclaire le consentement des parties et a le pouvoir de conférer un caractère authentique à tous les actes qui lui sont demandés. Il assure également la conservation des minutes.
@@ -35,7 +36,7 @@ $html = <<<HTML
 		</article>
 
 		<article class="huissier">
-			<h2>Les huissiers</h2>
+			<h2 class="h2">Les huissiers</h2>
 			<div>
 				<p>
 					L'huissier de justice est un officier exécutant des missions d'ordre légal.
@@ -55,8 +56,11 @@ $html = <<<HTML
 					</li>
 				</ul>
 			</div>
+			</section>
 		</article>
 	</div>
+	
+
 </main>
 HTML;
 

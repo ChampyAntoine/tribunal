@@ -6,8 +6,8 @@ require("include/carousel.php");
 $html = <<<HTML
 
 <main>
-	<div id="tribunaux" class="div">
-		<h2>Les tribunaux</h2>
+	<div id="tribunaux-index" class="div">
+		<h2 class="h2">Les tribunaux</h2>
 		<section class="section">
 			<a class="lien-a" href="siteEsplanade.php">
 				<article class="art">
@@ -56,7 +56,7 @@ $html = <<<HTML
 		</section>
 	</div>
 	<div id="vosdroits"class="div droits">
-		<h2>Vos droits</h2>
+		<h2 class="h2">Vos droits</h2>
 		<section class="section">
 		<p> Veuillez trouver sur ces sites de justices, les dispositifs qui sont à disposition des citoyens et des justiciables.
 		<ul>
