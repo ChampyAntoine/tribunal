@@ -84,6 +84,7 @@ if(isset($_REQUEST['inscription']))
 	mysqli_close($lien);
 }
 echo($html);
+require("include/footer.php");
 ?>			
 	</body>
 </html>

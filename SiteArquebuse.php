@@ -42,4 +42,4 @@ $html = <<<HTML
 HTML;
 
 echo($html);
-require("include/footer.html");
+require("include/footer.php");

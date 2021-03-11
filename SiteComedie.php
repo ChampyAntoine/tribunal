@@ -40,4 +40,4 @@ Le tribunal de proximité peut se voir confier par décision des chefs de la cou
 HTML;
 
 echo($html);
-require("include/footer.html");
+require("include/footer.php");

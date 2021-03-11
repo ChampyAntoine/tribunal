@@ -58,6 +58,7 @@ if(isset($_REQUEST['connexion']))
 	mysqli_close($lien);
 }
 echo($html);
+require("include/footer.php");
 ?>
 	</body>
 </html>		

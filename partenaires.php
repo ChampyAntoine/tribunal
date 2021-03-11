@@ -1,6 +1,9 @@
 <?php
 $title = "Partenaire de justice";
 require("include/header.php");
+$cheminImg = "src/image/carte-arquebuse.png";
+require("include/carousel.php");
+
 $html = <<<HTML
 
 <main>
@@ -54,8 +57,8 @@ $html = <<<HTML
 			</div>
 		</article>
 	</div>
-<main>
+</main>
 HTML;
 
 echo($html);
-require("include/footer.html");
+require("include/footer.php");

@@ -1,5 +1,7 @@
 <?php
 $title = "Actualités";
+$cheminImg = "src/image/DSCN0002_1_NRW_embedded.jpg";
+
 require("include/header.php");
 require("include/carousel.php");
 $html = <<<HTML
@@ -36,4 +38,4 @@ $html .= <<<HTML
 HTML;
 
 echo($html);
-require("include/footer.html");
+require("include/footer.php");

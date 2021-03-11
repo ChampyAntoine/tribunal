@@ -1,6 +1,7 @@
 <?php
 $title = "Accueil";
 require("include/header.php");
+$cheminImg = "src/image/carrousel.jpg";
 require("include/carousel.php");
 $html = <<<HTML
 
@@ -54,31 +55,6 @@ $html = <<<HTML
 			</a>
 		</section>
 	</div>
-
-	<!--<div class="div">
-		<h2>Nos actualités</h2>
-		<section class="section">
-			<a href="actualites.php">
-				<article class="art">
-					<div class="img-art">
-						<img src="./src/image/nouvelle-organisation.png" alt="">
-					</div>
-					<div class="texte-art">
-						<h3>Une nouvelle organisation</h3>
-					</div>
-				</article>
-			</a>
-			<article class="art">
-				<div class="texte-art">
-					<p>Depuis le 1er janvier 2020, les 5 juridictions ont été ramenées à 3 afin de rendre la justice plus accessible et plus lisible. </p>
-					<input class="button"
-       type="button"
-       value="En savoir plus">
-				</div>
-			</article>
-		</section>
-	</div>-->
-
 	<div id="vosdroits"class="div droits">
 		<h2>Vos droits</h2>
 		<section class="section">
@@ -100,4 +76,4 @@ $html = <<<HTML
 HTML;
 
 echo($html);
-require("include/footer.html");
+require("include/footer.php");

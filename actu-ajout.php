@@ -70,6 +70,7 @@ else
 mysqli_close($lien);
 }
 echo($html);
+require("include/footer.php");
 ?>
 	</body>
 </html>

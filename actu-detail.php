@@ -24,6 +24,7 @@ else
 }
 
 mysqli_close($lien);
+require("include/footer.php");
 ?>
 	</body>
 </html>			

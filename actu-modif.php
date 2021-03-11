@@ -100,7 +100,7 @@
 			<?php
 			}
 			mysqli_close($lien);
+			require("include/footer.php");
 		?>
-		<a href="index.php">Accueil</a>
 	</body>
 </html>	
