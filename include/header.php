@@ -20,6 +20,22 @@ $html = <<<HTML
   </script>
     <title>$title</title>
 </head>
+<script>
+            var height = window.innerHeight;
+            var header = document.querySelector("header");
+            var previousScroll = height;
+
+            function scroll() {
+                if (previousScroll > window.scrollY) {
+                    header.classList.remove('hidden');
+                } else if (window.scrollY > 150) {
+                    header.classList.add('hidden');
+                }
+                previousScroll = window.scrollY;
+            }
+            
+            window.onscroll = document.ontouchmove = scroll; 
+        </script>
 <body>
     <div class="container">
         <header>
@@ -75,7 +91,7 @@ HTML;
 $html.= <<<HTML
             </ul>
         </div>
-        <div>
+        <div class="bar">
             <div class="logo">
                 <img src="./src/image/logo.png" alt="" class="img-logo">
             </div>

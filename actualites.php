@@ -1,6 +1,6 @@
 <?php
 $title = "Actualités";
-$cheminImg = "src/image/DSCN0002_1_NRW_embedded.jpg";
+$cheminImg = "src/image/carrousel2.jpg";
 
 require("include/header.php");
 require("include/carousel.php");
@@ -23,10 +23,20 @@ if(!$res) {
 else {
 	while($tableau=mysqli_fetch_assoc($res))
 	{
-	$html .="<a class='lien-a' href='actu-detail.php?num=".$tableau['ida']."'><article class='art'>";
+	$html .= "<div class='bloc'>";
+	$html .= "<a class='lien-a' href='actu-detail.php?num=".$tableau['ida']."'><article class='art'>";
 	$html .= "<div class='img-art'><img src='".$tableau['image']."'></div>";
 	$html .= "<div class='texte-art'><h3>".$tableau['titre']."</h3></div>";
 	$html .= "</article></a>";
+
+	if(isset($_SESSION['idm'])){
+
+		$html .= "<div class='modif-supp'>";
+		$html .= "<a href='actu-modif.php?num=".$tableau['ida']."'><img src='https://img.icons8.com/dotty/50/000000/pencil-tip.png'/></a>";
+		$html .= "<a href='actu-suppression.php?num=".$tableau['ida']."'><img src='https://img.icons8.com/wired/64/000000/trash.png'/></a></div>";	
+	}
+
+	$html .= "</div>";
 	}
 }
 mysqli_close($lien);

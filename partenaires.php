@@ -1,7 +1,7 @@
 <?php
 $title = "Partenaire de justice";
 require("include/header.php");
-$cheminImg = "src/image/carte-arquebuse.png";
+$cheminImg = "src/image/carrousel3.jpg";
 require("include/carousel.php");
 
 $html = <<<HTML

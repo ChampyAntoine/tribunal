@@ -7,8 +7,8 @@
 	}
 	else
 	{
-		include('bdd.php');
-		include('outils.php');
+		include('config/bdd.php');
+		include('config/outils.php');
 		$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);
 		$num=nettoyage($lien,$_REQUEST['num']);
 		
@@ -21,10 +21,10 @@
 		else
 		{
 			$tableau=mysqli_fetch_array($res);
-			if(($tableau['auteur']!=$_SESSION['idm'])and($_SESSION['admin']==0))
+			if($_SESSION['admin']==0)
 			{
 				mysqli_close($lien);
-				header("Location:index.php");
+				header("Location:actualites.php");
 				exit;
 			}
 			if($tableau['image']!="")
@@ -42,7 +42,7 @@
 		else
 		{
 			mysqli_close($lien);
-			header("Location:index.php");
+			header("Location:actualites.php");
 		}
 	}
 ?>
