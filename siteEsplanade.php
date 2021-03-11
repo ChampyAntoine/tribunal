@@ -2,7 +2,7 @@
 $title = "Palais de Justice";
 require("include/header.php");
 $html = <<<HTML
-
+<div class="container">
 <main>
 	<div id="tribunaux" class="div">
 		<h2 class="h2">Palais de Justice (Site Esplanade)</h2>

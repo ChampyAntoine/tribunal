@@ -31,7 +31,6 @@ HTML;
 
 if(isset($_REQUEST['ajouter']))
 {
-	var_dump($_REQUEST);
 	include('config/bdd.php');
 	include('config/outils.php');
 	$lien=mysqli_connect(SERVEUR,LOGIN,MDP,BASE);				

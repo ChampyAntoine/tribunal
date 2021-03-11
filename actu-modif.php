@@ -78,6 +78,7 @@ else
 		exit;
 	}
 ?>
+<div class="container">
 	<form method="post" enctype="multipart/form-data">
 	<div class="form-group">
 		<label for="">Nom de l'actualité</label>

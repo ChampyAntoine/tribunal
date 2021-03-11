@@ -5,7 +5,7 @@ $cheminImg = "src/image/carrousel2.jpg";
 require("include/header.php");
 require("include/carousel.php");
 $html = <<<HTML
-
+<div class="container">
 <main>
 	<div class="div">
 		<h2>Nos actualités</h2>

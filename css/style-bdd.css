@@ -13,9 +13,8 @@ body
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-	padding-top: 100px;
+	padding: 75px 0;
 	width: 60%;
-	height: 100vh;
 	background-color: white;
 }
 
@@ -63,4 +62,11 @@ input {
 
 .submit:hover {
 	background-color: rgb(217, 236, 254);
+}
+
+@media (max-width: 1050px) {
+	#container {
+		width: 100%;
+		
+	}
 }

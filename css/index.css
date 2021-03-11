@@ -3,9 +3,9 @@
     margin-top: 75px;
 }
 
-h2 {
+.h2 {
     margin: 0 auto;
-    width: 600px;
+    width: auto;
     height:auto;
     font-size: 70px;
     padding: 20px;
@@ -19,6 +19,7 @@ h2 {
     justify-content: space-around;
     background-color:#F8F8F8;
 }
+
 
 .lien-a {
     margin: 50px 0;
@@ -41,6 +42,7 @@ a:hover img {
 .img-art img {
     width: 500px;
     height: 300px;
+	padding-bottom:10px;
 }
 
 .texte-art {
@@ -118,7 +120,22 @@ input
 	text-align:center;
 	font-size:30px;
 	
+	
 }
+
+#tribunaux .section h4
+{
+width: 50%;
+margin: 0 auto;
+}
+#tribunaux .section p
+{
+	width: 50%;
+	margin: 0 auto;
+	text-align:justify;
+	padding-top: 10px;
+}
+
 .texte-tri h4, .texte-art h4
 {
 	text-align:center;
@@ -140,5 +157,19 @@ input
 
 #partenaires p, #partenaires li {
     text-align: justify;
+}
+
+@media (max-width: 1050px) {
+    .div {
+        margin-top: 50px;
+    }
+    .div .h2 {
+        font-size: 36px;
+    }
+    
+    .droits li {
+        padding: 10px 50px;
+        min-width: 300px;
+    }
 }
 

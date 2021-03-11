@@ -2,7 +2,7 @@
 $title = "Site de Comédie";
 require("include/header.php");
 $html = <<<HTML
-
+<div class="container">
 <main>
 	<div id="tribunaux" class="div">
 		<h2 class="h2">Site Comédie Sedan</h2>

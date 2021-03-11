@@ -17,7 +17,7 @@ else
 	$tableau=mysqli_fetch_assoc($res);
 	$title = $tableau['titre'];
 	require("include/header.php");
-	echo("<div class='actu-detail'><div class='div'>");
+	echo("<div class='container'><div class='actu-detail'><div class='div'>");
 	$tableau['contenu'] = html_entity_decode($tableau['contenu']);
 	echo ($tableau['contenu']);
 	echo("</div></div>");

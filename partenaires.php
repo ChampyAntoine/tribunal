@@ -5,7 +5,7 @@ $cheminImg = "src/image/carrousel3.jpg";
 require("include/carousel.php");
 
 $html = <<<HTML
-
+<div class="container">
 <main>
 	<div id="partenaires" class="div">
 	<section class="section">
